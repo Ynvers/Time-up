@@ -67,10 +67,7 @@ def render_generation():
         </div>
     """, unsafe_allow_html=True)
     
-    st.warning("Le thème est caché. Ne trichez pas sauf si vous avez oublié !")
-    
-    if st.expander("J'ai oublié le thème (Cliquer pour voir)"):
-        st.write(st.session_state.current_theme)
+    st.warning("Le thème est caché. Ne trichez pas ! Si vous avez oublié, tant pis, recommencez la manche.")
 
     if st.button("J'AI L'IMAGE - PRÊT À FAIRE DEVINER"):
         next_state('GUESSING')
