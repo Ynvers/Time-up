@@ -94,9 +94,17 @@ h3 {
 	text-align: center;
 	margin: 3rem 0;
 	padding: 2rem;
-	background: rgba(255, 255, 255, 0.03);
+
+	/* Card Background */
+	background: rgba(255, 255, 255, 0.05);
+	/* Slightly lighter for visibility */
 	border-radius: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.1);
+
+	/* Ensure Text is Visible (Overriding h1 gradient) */
+	color: #ffffff;
+	-webkit-background-clip: border-box;
+	-webkit-text-fill-color: currentColor;
 
 	/* Reveal Animation */
 	animation: fadeIn 1s ease-out;
